@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>04 Laboratory 1</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #15173D;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #112D4E;
+      color: white;
+      text-align: center;
+      padding: 5px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: -12px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #afa4a4;
+    }
+
+    nav {
+      background-color: #00ADB5;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 35px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    section.card {
+      background-color: #355872;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    section.card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    section.card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    section.card p {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    section.card .price {
+      background-color: #DBE2EF;
+      color: #112D4E;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #0AC4E0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+   @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+      }
+
+      section.card img {
+        height: 160px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gadget Shop</h1>
+    <p>The best gadgets at the best prices!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Phones</a>
+    <a href="#">Laptops</a>
+    <a href="#">Accessories</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="grid">
+
+    <section class="card">
+      <article>
+        <h2>Samsung Galaxy S25</h2>
+        <img src="https://images.samsung.com/ph/smartphones/galaxy-s25/images/galaxy-s25-features-kv.jpg?imbypass=true" alt="Samsung Galaxy S25" />
+        <p>The Samsung Galaxy S25 is one of the best smartphones of 2025. It has a great camera, fast processor, and long battery life.</p>
+        <p>Category: Smartphone</p>
+        <span class="price">&#8369; 67,990.00</span>
+      </article>
+    </section>
+
+    <section class="card">
+      <article>
+        <h2>Apple MacBook Air M4</h2>
+        <img src="https://images.moneycontrol.com/static-mcnews/2025/01/20250104061547_MacBook-Ai.jpeg?impolicy=website&width=770&height=431" alt="MacBook Air M4" />
+        <p>The MacBook Air M4 is super thin and light. It is perfect for students and professionals who need a fast and reliable laptop.</p>
+        <p>Category: Laptop</p>
+        <span class="price">&#8369; 95,990.00</span>
+      </article>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Gadget Shop 2026 | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+
+<!--CARBONEL BT604E-->
